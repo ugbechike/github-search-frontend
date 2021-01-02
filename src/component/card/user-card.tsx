@@ -21,9 +21,10 @@ export const UserCard = () => {
   return (
     <BaseSimpleGrid>
       {data?.map((item: ItemElement, index: number) => {
-        const { profile } = item || {};
+        const { profile, html_url } = item || {};
         return (
           <Card key={index}>
+            <a href={html_url} target='_blank' rel='noreferrer'>
             <Box className={"user-card-flex"}>
               <img
                 src={profile?.avatar_url}
@@ -79,6 +80,7 @@ export const UserCard = () => {
                 <Text className={"user-card-following-text"}>repos</Text>
               </Box>
             </Box>
+            </a>
           </Card>
         );
       })}
