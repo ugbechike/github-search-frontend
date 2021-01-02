@@ -1,13 +1,206 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  background: #F7FAFC;
+
+}
+.app-container {
+  border: 1px solid #F7FAFC;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-height: 100vh;
+  background: #F7FAFC;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.default-search {
+  margin-top: 24px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*flex: 1;*/
+  transition: all .3s ease-out;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 10px;
+  /*margin-top: 100px*/
 }
+
+.header-wrapper {
+  /*border: 1px solid;*/
+  display: flex;
+  align-items: center;
+  min-width: 410px;
+  padding-bottom: 10px;
+}
+
+.search-on-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*flex: 1;*/
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  flex: 0;
+  margin-top: 324px;
+  transition: all .3s ease-in;
+}
+
+.input-wrapper {
+  justify-content: center;
+  display: flex;
+}
+
+.header-content {
+  padding-left: 10px;
+}
+
+.app-title {
+  /*text-align: center;*/
+  margin: 0;
+  font-size: large;
+  font-weight: bold;
+}
+.app-subtitle {
+  /*text-align: center;*/
+  margin: 0;
+  color: #8C8C8C;
+}
+
+.user-card-flex {
+  display: flex;
+  align-items: center;
+}
+
+.user-card-name {
+  margin: 0;
+  font-size: large;
+  font-weight: bold;
+}
+
+.user-card-login {
+  margin: 0;
+  font-size: medium;
+  color: #718096;
+}
+
+.user-card-content-wrapper{
+  padding-left: 10px;
+}
+
+.user-card-details-wrapper {
+  height: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+
+.user-card-bio {
+  color: #4a5568;
+  font-size: medium;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.user-card-company {
+  /*color: #4a5568;*/
+  color: #24292E;
+  font-size: 14px;
+  font-family: ".SF NS Mono", serif;
+  margin: 0;
+  padding-left: 5px;
+}
+
+.user-card-footer {
+  display: flex;
+  -webkit-box-align: baseline;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  max-width: 300px;
+  padding-top: 5px;
+}
+
+.user-card-company-wrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 58px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.user-card-flex {
+  display: flex;
+  align-items: center;
+}
+
+.user-card-following-number {
+  color: black;
+  padding-left: 5px;
+  font-size: 14px;
+}
+.user-card-following-text {
+  color: #4a5568;
+  padding-left: 5px;
+  font-size: 15px;
+}
+
+.details-section {
+  height: 50px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .app-container {
+    /*border: 1px solid;*/
+    width: 100%;
+  }
+
+  .header-wrapper {
+    min-width: 100%;
+    justify-content: center;
+  }
+
+  .input {
+    width: 100%;
+    min-width: 0px;
+  }
+
+  .select {
+    width: 5em;
+  }
+}
+
+/* using two column for mobile screen, data will not be easily visible*/
+@media only screen and (max-width: 375px) {
+
+  .app-container {
+    /*border: 1px solid;*/
+    width: 100%;
+  }
+
+  .header-wrapper {
+    min-width: 100%;
+  }
+
+  .input {
+    width: 100% !important;
+    min-width: 0px;
+  }
+
+  .select {
+    width: 8em !important;
+  }
+
+  .default-search {
+    margin-bottom: 10px;
+  }
+}
+

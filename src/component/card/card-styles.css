@@ -1,0 +1,97 @@
+.card-container {
+  border: 1px solid white;
+  background-color: white;
+  padding: 16px;
+  min-height: 60px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  display: flex;
+  flex-direction: column;
+  /*margin: 10px;*/
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  color: rgb(49, 130, 206);
+  font-size: 16px;
+  margin: 0px;
+  font-weight: 700;
+  overflow: hidden;
+  text-decoration: none;
+  padding-left: 8px;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.description-section{
+    height: 55px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.repo-description-text {
+    color: #586069;
+    font-size: 15px;
+}
+
+.spacing {
+    padding-left: 5px;
+}
+
+
+.repo-detail {
+    display: flex;
+    -webkit-box-pack: justify;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    /*margin-bottom: 16px;*/
+    max-width: 256px;
+}
+
+.lang-color {
+    height: 10px;
+    border-radius: 10px;
+    width: 10px;
+    margin-right: 5px;
+}
+
+.desc-sub-section {
+    margin-top: 10px;
+}
+
+.text-style {
+    font-size: medium;
+    color: #586069;
+}
+
+.language-wrapper {
+    margin-right: 20px
+}
+
+.repo-card-footer {
+    /*border: 1px solid;*/
+    padding-top: 10px;
+}
+
+/*@media only screen and (max-width: 768px) {*/
+/*    .card-container {*/
+/*        margin: 0 5px 0px 5px;*/
+/*    }*/
+/*}*/
+
+
+
+@media only screen and (max-width: 375px) {
+    .card-container {
+        margin: 0 5px 0px 5px;
+    }
+}
+
+
